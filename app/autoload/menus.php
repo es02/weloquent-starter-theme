@@ -14,9 +14,6 @@ use Weloquent\Facades\Menu;
  * </code>
  */
 
-// These menus are not fucking adding.
-// What the actual fuck?
-
 Menu::add('primary', 'Primary menu',
 	array(
 		'container'       => 'div',
@@ -41,6 +38,4 @@ Menu::add('primary', 'Primary menu',
  */
 Menu::add('footer', 'Footer menu');
 
-// Okay, they *ARE* adding. Render code is fucked?
-
-echo Menu::render('footer');
+Menu::render('footer');
