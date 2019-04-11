@@ -17,7 +17,7 @@ return [
 
 	'paths'        => array(
 		$paths['theme'],
-		$paths['theme'] . '/app/views',
+		$paths['theme'] . '/resources/views',
 	),
 
 	/**

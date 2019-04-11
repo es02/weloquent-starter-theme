@@ -8,9 +8,9 @@ use Weloquent\Facades\Route;
 
 /**
  * Bind a class to home path
- * Using App::mak() will you will get dependency injection by Laravel
+ * Using App::make() will you will get dependency injection by Laravel
  */
-Route::add('/', 'home', 1)->bindToMethod(App::make('Starter\Controllers\HomeController'), 'index');
+Route::add('/', 'home', 1)->bindToMethod(App::make('Starter\Http\Controllers\HomeController'), 'index');
 
 /**
  * Overwrite the main query to order posts
@@ -52,4 +52,4 @@ Route::add('/order/{dir}/page/{num}', 'paged_order_route', 2, [
  */
 Route::add('/contact/send', 'post_contact')
 	->methods(['POST'])
-	->bindToMethod(App::make('Starter\Controllers\ContactController'), 'postSend');
+	->bindToMethod(App::make('Starter\Http\Controllers\ContactController'), 'postSend');

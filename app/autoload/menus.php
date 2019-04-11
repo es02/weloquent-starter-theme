@@ -4,7 +4,7 @@
  * Register our menus
  * ---------------------------------------------------
  */
-
+use Weloquent\Facades\Menu;
 /**
  * On template use:
  * <code>
@@ -13,6 +13,10 @@
  * <?php echo Menu::render('primary')?>
  * </code>
  */
+
+// These menus are not fucking adding.
+// What the actual fuck?
+
 Menu::add('primary', 'Primary menu',
 	array(
 		'container'       => 'div',
@@ -32,8 +36,11 @@ Menu::add('primary', 'Primary menu',
 	->before('<li><a href="#">Before link</a></li>')
 	->after('<li><a href="#">After link</a></li>')
 	->remember(0);
-
 /*
  * Default configurations
  */
 Menu::add('footer', 'Footer menu');
+
+// Okay, they *ARE* adding. Render code is fucked?
+
+echo Menu::render('footer');

@@ -50,7 +50,7 @@ add_action('init', function ()
 			<?php if (!empty($attr['posts'])) : ?>
 				<?php //foreach ($attr['posts'] as $p): ?>
 					<em><?php echo esc_html($attr['posts']); ?></em><br>
-				<?php// endforeach; ?>
+				<?php // endforeach; ?>
 			<?php endif; ?>
 		</div>
 

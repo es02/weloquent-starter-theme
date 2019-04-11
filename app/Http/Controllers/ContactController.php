@@ -1,19 +1,18 @@
-<?php  namespace Starter\Controllers;
+<?php  namespace Starter\Http\Controllers;
 
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Validator;
-use Starter\Controllers\BaseController as BC;
 
 
 /**
  * ContactController
- * 
+ *
  * @author Bruno Barros  <bruno@brunobarros.com>
  * @copyright	Copyright (c) 2014 Bruno Barros
  */
-class ContactController extends BC{
+class ContactController extends BaseController{
 
 
 	/**

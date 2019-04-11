@@ -1,7 +1,7 @@
-<?php namespace Starter\Controllers;
+<?php namespace Starter\Http\Controllers;
 /**
  * HomeController
- * 
+ *
  * @author Bruno Barros  <bruno@brunobarros.com>
  * @copyright	Copyright (c) 2014 Bruno Barros
  */
@@ -16,4 +16,4 @@ class HomeController extends BaseController{
 		$this->share('orderDir', 'desc');
 	}
 
-} 
+}

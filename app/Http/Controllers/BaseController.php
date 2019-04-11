@@ -1,11 +1,11 @@
-<?php namespace Starter\Controllers;
+<?php namespace Starter\Http\Controllers;
 
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\View;
 
 /**
  * BaseController
- * 
+ *
  * @author Bruno Barros  <bruno@brunobarros.com>
  * @copyright	Copyright (c) 2014 Bruno Barros
  */
@@ -22,4 +22,4 @@ class BaseController extends Controller{
 		View::share($view, $data);
 	}
 
-} 
+}
